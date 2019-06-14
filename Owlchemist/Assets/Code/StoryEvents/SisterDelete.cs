@@ -17,7 +17,6 @@ public class SisterDelete : MonoBehaviour
     {
         eventComponent.OnSisterCleansed += DeleteSisterBody;
     }
-    
     public void DeleteSisterBody()
     {
         sisterBody.gameObject.SetActive(false);
