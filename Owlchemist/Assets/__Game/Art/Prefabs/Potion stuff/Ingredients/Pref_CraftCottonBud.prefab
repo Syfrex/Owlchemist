@@ -41,7 +41,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8820755, g: 0.9393369, b: 1, a: 1}
   m_Intensity: 5.4
   m_Range: 1.96
   m_SpotAngle: 30
@@ -323,7 +323,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8820755, g: 0.9393369, b: 1, a: 1}
   m_Intensity: 2.77
   m_Range: 3.12
   m_SpotAngle: 30
@@ -380,11 +380,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6811161284612205758}
     m_Modifications:
-    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
-        type: 3}
-      propertyPath: m_Name
-      value: Ps_FirefliesMain
-      objectReference: {fileID: 0}
     - target: {fileID: 132394614001379578, guid: 4b58b32e1eb018946a31b2a66df14f43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -439,6 +434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
+        type: 3}
+      propertyPath: m_Name
+      value: Ps_FirefliesMain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b58b32e1eb018946a31b2a66df14f43, type: 3}

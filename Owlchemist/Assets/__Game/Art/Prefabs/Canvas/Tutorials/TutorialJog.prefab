@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 1.8}
+  m_AnchoredPosition: {x: -37.1, y: 1.8}
   m_SizeDelta: {x: 59.4, y: 59.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8514414421833610108
@@ -65,7 +65,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3b125f3297e8c5043a00b37396c7b487, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ccb19737f44a98d49af67c1e0ef4524b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -202,6 +202,8 @@ MonoBehaviour:
   cg: {fileID: 0}
   fadeInTime: 1
   fadeOutTime: 1
+  visible: 0
+  currentState: 0
 --- !u!1 &5190156551458432315
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +282,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press            to walk faster
+  m_Text: Hold            to walk faster
 --- !u!1 &6786540811571679121
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,10 +317,10 @@ RectTransform:
   m_Father: {fileID: 4809172688473838252}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145.6, y: -289.2}
-  m_SizeDelta: {x: 446.5, y: 85.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 256}
+  m_SizeDelta: {x: 446.5, y: 98.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9012666535307457282
 CanvasRenderer:
