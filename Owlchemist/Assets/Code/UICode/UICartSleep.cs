@@ -84,6 +84,7 @@ public class UICartSleep : UITarget
     }
     public override void MyFuction()
     {
+        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<GameManagerComponent>().hasGottenShutEye = true;
         insideCartRef.GetComponent<CartInteraction>().DayTranition();
         closed = false;
         sleepScreen.gameObject.SetActive(true);

@@ -138,6 +138,7 @@ public class CartInteraction : MonoBehaviour
         GameManagerComponent gmc = player.GetComponent<GameManagerComponent>();
         gmc?.OnStartGameTick();
         gmc.isInsideCart = false;
+        gmc.isOutsideCart = true;
         cameraRef.Priority = 9;
         target = -1;
         targetTextCanvas.SetActive(false);

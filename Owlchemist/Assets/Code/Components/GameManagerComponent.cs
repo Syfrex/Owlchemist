@@ -2,8 +2,10 @@
 {
     public CartInteraction cartInteraction;
     public bool isInsideCart { get; set; }
+    public bool isOutsideCart { get; set; }
+    public bool hasGottenShutEye { get; set; }
 
-public delegate void RestartDelegate();
+    public delegate void RestartDelegate();
     public RestartDelegate OnRestart;
 
     public delegate void VictoryDelegate();

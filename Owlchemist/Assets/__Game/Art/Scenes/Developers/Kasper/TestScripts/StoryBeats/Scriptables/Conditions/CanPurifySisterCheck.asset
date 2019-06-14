@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10b2fa3982f59b945ab21b46ace9b7de, type: 3}
-  m_Name: InFirstTorchRangeCheck
+  m_Script: {fileID: 11500000, guid: 4874e6609340fb744bc024a7d77e28b6, type: 3}
+  m_Name: CanPurifySisterCheck
   m_EditorClassIdentifier: 
-  compareDistance: 6
-  torchCheck: 1
+  distance: 3
+  purificationPotion: {fileID: 0}
