@@ -30,8 +30,7 @@ public class TimelineActivation : MonoBehaviour
     }
     void OnPlayableDirectorStopped(PlayableDirector aDirector)
     {
-        Debug.Log("stålmanen");
-        playerRef.GetComponent<GameManagerComponent>()?.OnStartGameTick();
+        //playerRef.GetComponent<GameManagerComponent>()?.OnStartGameTick();
         playerRef.GetComponent<NavMeshAgent>().enabled = true;
     }
 
