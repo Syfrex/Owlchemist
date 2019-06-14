@@ -157,11 +157,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.94
-  m_Text: "That\x19s why I\x19m here; it\x19s our last chance at cleansing the fog.
-    If this works, we have a way of saving everyone. Do this, for me, and for everyone
-    else.\r\n\r\nYours always,\r\nWorlondy\r\n\r\nPS! I\x19m sorry I didn\x19t say
-    goodbye. But now that you know why I left, I hope you understand. I believe in
-    you. I love you, dear sister.\r\n"
+  m_Text: "That\x19s why I\x19 was here; it\x19's our last chance at cleansing the
+    fog. Do this, for me, and for everyone else.\r\n\r\nYours always,\r\nNyctea\n\r\nPS!
+    I\x19m sorry I didn\x19t say goodbye. But now that you know why I left, I hope
+    you understand. I believe in you. I love you, dear sister.\r\n"
 --- !u!1 &3570517617928886918
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +308,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5264482950126538895}
+  - {fileID: 2901395594944095036}
   m_Father: {fileID: 4958697507507730612}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -388,8 +388,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -642.18005, y: -333.5}
-  m_SizeDelta: {x: 30, y: 30}
+  m_AnchoredPosition: {x: -420.40002, y: -291}
+  m_SizeDelta: {x: 30, y: 66.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &192076533490095161
 CanvasRenderer:
@@ -506,12 +506,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.96
-  m_Text: "You have to fulfill my quest now. I know you wanted no part of this, but
-    this is crucial for saving everyone. \r\n\r\nI\x19ve found the Corrupted Well,
-    the source of corruption in this area. \n\nIt is located east of here, spewing
-    out fog like a chimney. It is now up to you to craft the Tears of the Sun-mother.\r\n\r\nThe
-    recipe is in my book. When you\x19ve crafted the potion, you must throw the potion
-    into the Well. According to the recipe, it will cleanse the entire area. \r"
+  m_Text: "You have to fulfill my quest now. I\x19 found the <b>Corrupted Well</b>,
+    the source of corruption in this area. \n\nIt is located east, spewing fog \nlike
+    a chimney. It is now up \nto you to craft the <b>*Tears of the Sun-mother.\r*</b>\n\r\nThe
+    recipe is in my book. When you\x19've crafted the potion, you must <b>throw the
+    potion into the Corrupted Well</b>. According to the recipe, it will cleanse the
+    entire area. \r"
 --- !u!1 &5602251365608976738
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,7 +546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -717.7, y: -334.9}
+  m_AnchoredPosition: {x: -469, y: -291}
   m_SizeDelta: {x: 206.91998, y: 49.099976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5259597262991209796
@@ -591,6 +591,80 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 1
+--- !u!1 &5999815275952800918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2901395594944095036}
+  - component: {fileID: 1372184707261155835}
+  - component: {fileID: 3236977401000612905}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2901395594944095036
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999815275952800918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1902223642281621743}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 203.58, y: 104.95}
+  m_SizeDelta: {x: 209.9, y: 209.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1372184707261155835
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999815275952800918}
+  m_CullTransparentMesh: 0
+--- !u!114 &3236977401000612905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999815275952800918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: e2f58babff5532d4c8fbbd359746a721, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &7245608151025675197
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -510.78, y: -343.05}
+  m_AnchoredPosition: {x: -262.08, y: -299.15}
   m_SizeDelta: {x: 206.91998, y: 49.099976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3460832778413854
@@ -780,9 +854,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -571.52, y: -333.5}
-  m_SizeDelta: {x: 30, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -294, y: -290.9}
+  m_SizeDelta: {x: 30, y: 66.31}
+  m_Pivot: {x: 0.5, y: 0.5561119}
 --- !u!222 &6782648578009248499
 CanvasRenderer:
   m_ObjectHideFlags: 0
