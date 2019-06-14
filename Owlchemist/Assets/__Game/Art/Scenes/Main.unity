@@ -2613,7 +2613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7d8e8fed674c8c4d8f2ea68b6282211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstInteractable: {fileID: 0}
+  firstInteractable: {fileID: 1444772441}
 --- !u!114 &599449711 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 599449711, guid: 25ca7a601f6c8264fa38e8cc8fa6d8b3,
@@ -4697,7 +4697,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-24730
+=======
+  m_Name: pb_Mesh-59410
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4923,6 +4927,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialLootFire
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 02f4f971800dc904bbd73513405bdbed, type: 3}
+--- !u!4 &1078757146 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1803060832000438281, guid: 02f4f971800dc904bbd73513405bdbed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1078757145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1078757147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3413336674264449562, guid: 02f4f971800dc904bbd73513405bdbed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1078757145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1120648502
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 377472284}
+    m_Modifications:
+    - target: {fileID: 1934613649890323704, guid: cc5261ab9e230474b8734f12a810ae0c,
+        type: 3}
+      propertyPath: m_Name
+      value: TutorialLootFire
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 4809172688473838252, guid: cc5261ab9e230474b8734f12a810ae0c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8028,6 +8061,7 @@ PrefabInstance:
       propertyPath: m_ExposedReferences.m_References.Array.data[10].first
       value: 50637e3a41a3f1548b7545fb18688a6b
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 1867742298393895761, guid: 25ca7a601f6c8264fa38e8cc8fa6d8b3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8038,6 +8072,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.1
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25ca7a601f6c8264fa38e8cc8fa6d8b3, type: 3}
 --- !u!4 &1694010955 stripped
