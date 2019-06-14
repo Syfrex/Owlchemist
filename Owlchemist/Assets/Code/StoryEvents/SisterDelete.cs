@@ -9,7 +9,7 @@ public class SisterDelete : MonoBehaviour
     [SerializeField] GameObject sisterGravestone;
     [SerializeField] PlayerEventComponent eventComponent;
     public CartInteraction insideCart;
-    bool ifSisterDead = true;
+    bool ifSisterDead = false;
     bool decaing = false;
     float dealy = 3f;
    private void Awake()
