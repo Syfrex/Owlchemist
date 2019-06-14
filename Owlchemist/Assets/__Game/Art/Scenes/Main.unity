@@ -4923,35 +4923,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialLootFire
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 02f4f971800dc904bbd73513405bdbed, type: 3}
---- !u!4 &1078757146 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1803060832000438281, guid: 02f4f971800dc904bbd73513405bdbed,
-    type: 3}
-  m_PrefabInstance: {fileID: 1078757145}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1078757147 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3413336674264449562, guid: 02f4f971800dc904bbd73513405bdbed,
-    type: 3}
-  m_PrefabInstance: {fileID: 1078757145}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1120648502
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 377472284}
-    m_Modifications:
-    - target: {fileID: 1934613649890323704, guid: cc5261ab9e230474b8734f12a810ae0c,
-        type: 3}
-      propertyPath: m_Name
-      value: TutorialLootFire
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4809172688473838252, guid: cc5261ab9e230474b8734f12a810ae0c,
         type: 3}
       propertyPath: m_LocalPosition.x
