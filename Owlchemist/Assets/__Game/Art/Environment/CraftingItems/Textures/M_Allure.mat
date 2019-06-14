@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Allure
   m_Shader: {fileID: 4800000, guid: b3c80a8c13c3b4d41b0115832c83ceca, type: 3}
-  m_ShaderKeywords: _USEALBEDOMAP_ON _USEMASKTEX_ON
+  m_ShaderKeywords: _USEALBEDOMAP_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -108,7 +108,7 @@ Material:
     - _UVSec: 0
     - _UseAlbedoMap: 1
     - _UseCustomAmbientColor: 0
-    - _UseMaskTex: 1
+    - _UseMaskTex: 0
     - _UseMetallicTex: 0
     - _UseRoughnessTex: 0
     - _ZWrite: 1

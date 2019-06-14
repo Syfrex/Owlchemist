@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2201333688246895085}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.136, y: 0.697, z: -0.052}
+  m_LocalPosition: {x: 0.136, y: 0.918, z: 0.062}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 198541175483606282}
@@ -41,7 +41,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.2830189, g: 0.10599108, b: 0.07075472, a: 1}
+  m_Color: {r: 0.5, g: 0.18749999, b: 0.125, a: 1}
   m_Intensity: 3.87
   m_Range: 1.97
   m_SpotAngle: 30
@@ -210,6 +210,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 198541175483606282}
     m_Modifications:
+    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
+        type: 3}
+      propertyPath: m_Name
+      value: Ps_FirefliesMain
+      objectReference: {fileID: 0}
     - target: {fileID: 132394614001379578, guid: 4b58b32e1eb018946a31b2a66df14f43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -218,12 +223,12 @@ PrefabInstance:
     - target: {fileID: 132394614001379578, guid: 4b58b32e1eb018946a31b2a66df14f43,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.616
+      value: 0.871
       objectReference: {fileID: 0}
     - target: {fileID: 132394614001379578, guid: 4b58b32e1eb018946a31b2a66df14f43,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.141
+      value: 0.273
       objectReference: {fileID: 0}
     - target: {fileID: 132394614001379578, guid: 4b58b32e1eb018946a31b2a66df14f43,
         type: 3}
@@ -264,11 +269,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
-        type: 3}
-      propertyPath: m_Name
-      value: Ps_FirefliesMain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b58b32e1eb018946a31b2a66df14f43, type: 3}

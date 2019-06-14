@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Mallice
+  m_Name: M_SwampTree01
   m_Shader: {fileID: 4800000, guid: b3c80a8c13c3b4d41b0115832c83ceca, type: 3}
-  m_ShaderKeywords: _USEALBEDOMAP_ON
+  m_ShaderKeywords: _USEALBEDOMAP_ON _USEROUGHNESSTEX_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoTex:
-        m_Texture: {fileID: 2800000, guid: 288e098d4f114c742b503ef238a0cd38, type: 3}
+        m_Texture: {fileID: 2800000, guid: c92cd58bbadc2b34da24094c9c7a2c8f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissiveTex:
-        m_Texture: {fileID: 2800000, guid: 288e098d4f114c742b503ef238a0cd38, type: 3}
+        m_Texture: {fileID: 2800000, guid: d1a9193d8be22a348ac5ff147fd9fe28, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
-        m_Texture: {fileID: 2800000, guid: e2a84950351fafa4b83ddb434094e5b6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -64,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: f0bb4823242337f489c9bcb29a9746ad, type: 3}
+        m_Texture: {fileID: 2800000, guid: dd738f5134a262c46b0320b57a717df8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -76,7 +76,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RoughnessTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 3f2c3337bfa311a48aa681734cec6c54, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -89,7 +89,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _EmissiveTexStrength: 1
+    - _EmissiveTexStrength: 0.3
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -101,7 +101,7 @@ Material:
     - _OverlayStrength: 1
     - _Parallax: 0.02
     - _Roughness: 1
-    - _RoughnessTexIntensity: 1
+    - _RoughnessTexIntensity: 0.89
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -110,7 +110,7 @@ Material:
     - _UseCustomAmbientColor: 0
     - _UseMaskTex: 0
     - _UseMetallicTex: 0
-    - _UseRoughnessTex: 0
+    - _UseRoughnessTex: 1
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
@@ -119,4 +119,4 @@ Material:
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0.26415092, g: 0.07340987, b: 0.056069776, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}

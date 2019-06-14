@@ -3,7 +3,17 @@ guid: 6145038835be25b40b561de13a0493fe
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CottonBudMat
+    second: {fileID: 2100000, guid: 17f0bd7bc92401242946d87fbb5ed322, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CottonBud_Low_defaultMat1
+    second: {fileID: 2100000, guid: c047dbbe9e68d284abe18a109ac1fec6, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
