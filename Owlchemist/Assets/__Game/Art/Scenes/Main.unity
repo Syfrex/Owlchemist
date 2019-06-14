@@ -1752,21 +1752,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3d5dc6cf0be03d54485f4e961b57414c, type: 2}
-    - target: {fileID: 6751767259495483418, guid: f1d0399e9c6bff049a2e46ee0dfbc2f1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 6751767259495483418, guid: f1d0399e9c6bff049a2e46ee0dfbc2f1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -85.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 6751767259495483418, guid: f1d0399e9c6bff049a2e46ee0dfbc2f1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.77
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d0399e9c6bff049a2e46ee0dfbc2f1, type: 3}
 --- !u!4 &348504184 stripped
@@ -5357,11 +5342,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 755510594}
     m_Modifications:
-    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
-        type: 3}
-      propertyPath: m_Name
-      value: Ps_FirefliesMain
-      objectReference: {fileID: 0}
     - target: {fileID: 132394614001379578, guid: 4b58b32e1eb018946a31b2a66df14f43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5416,6 +5396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
+        type: 3}
+      propertyPath: m_Name
+      value: Ps_FirefliesMain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b58b32e1eb018946a31b2a66df14f43, type: 3}
@@ -5877,11 +5862,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1432221509}
     m_Modifications:
-    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
-        type: 3}
-      propertyPath: m_Name
-      value: Ps_FirefliesMain
-      objectReference: {fileID: 0}
     - target: {fileID: 132394614001379578, guid: 4b58b32e1eb018946a31b2a66df14f43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5936,6 +5916,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
+        type: 3}
+      propertyPath: m_Name
+      value: Ps_FirefliesMain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b58b32e1eb018946a31b2a66df14f43, type: 3}
@@ -8554,11 +8539,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1616819073}
     m_Modifications:
-    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
-        type: 3}
-      propertyPath: m_Name
-      value: Ps_FirefliesMain
-      objectReference: {fileID: 0}
     - target: {fileID: 132394614001379578, guid: 4b58b32e1eb018946a31b2a66df14f43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8613,6 +8593,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 132394614001379557, guid: 4b58b32e1eb018946a31b2a66df14f43,
+        type: 3}
+      propertyPath: m_Name
+      value: Ps_FirefliesMain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b58b32e1eb018946a31b2a66df14f43, type: 3}
