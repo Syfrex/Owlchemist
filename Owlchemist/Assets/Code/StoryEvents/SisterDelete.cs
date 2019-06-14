@@ -17,7 +17,6 @@ public class SisterDelete : MonoBehaviour
     {
         eventComponent.OnSisterCleansed += DeleteSisterBody;
     }
-    
     public void DeleteSisterBody()
     {
         sisterBody.gameObject.SetActive(false);
@@ -31,8 +30,7 @@ public class SisterDelete : MonoBehaviour
         if(decaing)
         {
             if (dealy <= 0)
-            {
-                
+            {               
                 decaing = false;
                 insideCart.player.GetComponent<InventoryComponent>().TransferItemsFromTo(insideCart.player.GetComponent<InventoryComponent>(), insideCart.cart.GetComponent<InventoryComponent>());
                 insideCart.PlayerDeath();

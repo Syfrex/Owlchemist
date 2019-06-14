@@ -13,7 +13,8 @@ public class AudioSystem : BaseSystem
             int id,
             GameObject go,
             MovementComponent mc,
-            InputComponent ic
+            InputComponent ic,
+            LightComponent lc
             )
         {
             this.id = id;
@@ -21,6 +22,7 @@ public class AudioSystem : BaseSystem
             gameObject = go;
             movementComponent = mc;
             inputComponent = ic;
+            lightComponent = lc;
         }
 
         public int id;
@@ -28,6 +30,7 @@ public class AudioSystem : BaseSystem
         public GameObject gameObject;
         public MovementComponent movementComponent;
         public InputComponent inputComponent;
+        public LightComponent lightComponent;
     }
 
     public override void Initialize(Transform[] objects)
@@ -38,10 +41,10 @@ public class AudioSystem : BaseSystem
         {
             MovementComponent mc = objects[i].GetComponent<MovementComponent>();
             InputComponent ic = objects[i].GetComponent<InputComponent>();
-
-            if (mc && ic)
+            LightComponent lc = objects[i].GetComponent<LightComponent>();
+            if (mc && ic && lc)
             {
-                tmpFilters.Add(new Filter(index, objects[i].gameObject, mc, ic));
+                tmpFilters.Add(new Filter(index, objects[i].gameObject, mc, ic, lc));
             }
         }
 
@@ -69,6 +72,7 @@ public class AudioSystem : BaseSystem
     {
         player.animationComponent.OnPlayTorchToggleAnimation += PlayTorchToggle;
         player.eventComponent.OnGatherResource += PlayHarvest;
+        //player.lightComponent.
         //player.gameManagerComponent.On..
 
         player.animationComponent.OnPlayAttackAnimation += PlayTorchSwipe;
@@ -91,6 +95,7 @@ public class AudioSystem : BaseSystem
     }
     private void PlayStepSound()
     {
+        Debug.Log("FootSteep");
         player.audioComponent.oneShotSource.PlayOneShot(player.audioComponent.footsteps[Random.Range(0, player.audioComponent.footsteps.Length - 1)]);
     }
     private void PlayCraft()

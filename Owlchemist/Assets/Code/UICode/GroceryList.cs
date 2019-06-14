@@ -2,34 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class GroceryList : MonoBehaviour
 {
     public GameObject player;
     public GameObject cartRef;
     public Text[] list;
+    public Image[] icons;
     public bool isButtonDown;
     public Text mainMissionTxT;
+    public Sprite noIngerdiantIcon;
     public string[] mainMisionText;
     public int missonState = 0;
     public float fadeDelay = 1.2f;
     public float fadeTime = 0;
-    /*
-     * //Could In Theory make an array whith both numbers and items, if number == 0 the it doesent show (Weekend Work)
-     * 
-     *  */
-    public ingredientAmount[] allIngredienses;
-    List<ingredientAmount> allIngrediensessOnList = new List<ingredientAmount>();
-   
-    List<CollectibleComponent> ingredients = new List<CollectibleComponent>();
-    List<CollectibleComponent> ingredientsOnList;
 
-    
+    public ingredientAmount[] allIngredienses;
+    public Sprite[] allIngrediensesImages;
+    public List<ingredientAmount> allIngrediensessOnList = new List<ingredientAmount>();
+    public List<Sprite> thierimages = new List<Sprite>();
+
 
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<CanvasGroup>().alpha = 0;
+        //GetComponent<CanvasGroup>().alpha = 0;
         UpdateList();
         NewMainQuest(0);
     }
@@ -37,6 +35,7 @@ public class GroceryList : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (isButtonDown)
         {
             fadeTime = 0;
@@ -50,6 +49,7 @@ public class GroceryList : MonoBehaviour
         {
             fadeTime = Mathf.Clamp(fadeTime + Time.deltaTime, 0, fadeDelay);
         }
+        */
     }
     public void NewMainQuest(int newQuestNumber)
     {
@@ -65,20 +65,8 @@ public class GroceryList : MonoBehaviour
     }
     public void UpdateList()
     {
-        /*
-        ingredientsOnList = new List<CollectibleComponent>();
-        if (ingredients.Count > 0)
-        {          
-            for (int i = 0; i < ingredients.Count; i++)
-            {
-                if (!ingredientsOnList.Contains(ingredients[i]))
-                {
-                    ingredientsOnList.Add(ingredients[i]);
-                }            
-            }
-        }
-         */
         allIngrediensessOnList.Clear();
+        thierimages.Clear();
         for (int i = 0; i < allIngredienses.Length; i++)
         {
             int tempInt = 0;
@@ -101,63 +89,39 @@ public class GroceryList : MonoBehaviour
                     break;
                 }
             }
-
             if (Mathf.Clamp((allIngredienses[i].howMany - (tempInt + tempInt2)), 0,100000) > 0)
             {
-                allIngrediensessOnList.Add(allIngredienses[i]);
-                allIngrediensessOnList[allIngrediensessOnList.Count - 1].howMany -= (tempInt + tempInt2);
+                Debug.Log("cart amount " + tempInt + " : PlayerAmount " + tempInt2 + " : Whants " + allIngredienses[i].howMany);
+                allIngrediensessOnList.Add(new ingredientAmount());
+                allIngrediensessOnList[allIngrediensessOnList.Count - 1].ingredient = allIngredienses[i].ingredient;
+                allIngrediensessOnList[allIngrediensessOnList.Count - 1].howMany = allIngredienses[i].howMany - (tempInt + tempInt2);
+                thierimages.Add(allIngrediensesImages[i]);
             }
         }
-       /*
-        for (int i = 0; i < list.Length; i++)
-        {
-            if (ingredientsOnList.Count == 0)
-            {
-                list[i].text = "";
-            }
-            else if(ingredientsOnList.Count - 1 >= i)
-            {
-                list[i].text = ingredientsOnList[i].baseCollectible.GetName().ToString();                
-            }
-            else
-            {
-                list[i].text = "";
-                
-            }
-        }
-        */
+
         for (int i = 0; i < list.Length; i++)
         {
             if (allIngrediensessOnList.Count == 0)
             {
                 list[i].text = "";
+                icons[i].sprite = noIngerdiantIcon;
             }
             else if (allIngrediensessOnList.Count - 1 >= i)
             {
                 list[i].text =  allIngrediensessOnList[i].howMany + " " + allIngrediensessOnList[i].ingredient.baseCollectible.GetName();
+                icons[i].sprite = thierimages[i];
             }
             else
             {
                 list[i].text = "";
+                icons[i].sprite = noIngerdiantIcon;
 
             }
         }
         
     }
-    public void RemoveFromList(CollectibleComponent[] ing/**/, int[] howMany)
-    {/*
-        for (int i = 0; i < ing.Length; i++)
-        {
-            for (int y = 0; y < ingredients.Count; y++)
-            {
-                if(ingredients[y].baseCollectible == ing[i].baseCollectible)
-                {
-                    ingredients.RemoveAt(y);
-                    break;
-                }               
-            }
-        }
-        */
+    public void RemoveFromList(CollectibleComponent[] ing, int[] howMany)
+    {
         for (int i = 0; i < ing.Length; i++)
         {
             for (int y = 0; y < allIngredienses.Length; y++)
@@ -171,13 +135,8 @@ public class GroceryList : MonoBehaviour
         }
         
     }
-    public void AddToList(CollectibleComponent[] ing/**/, int[] howMany)
-    {/*
-        for (int i = 0; i < ing.Length; i++)
-        {
-            ingredients.Add(ing[i]);
-        }
-        */
+    public void AddToList(CollectibleComponent[] ing, int[] howMany)
+    {
         for (int i = 0; i < ing.Length; i++)
         {
             for (int y = 0; y < allIngredienses.Length; y++)

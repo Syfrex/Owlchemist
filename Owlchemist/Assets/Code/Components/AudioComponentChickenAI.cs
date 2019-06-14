@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioComponentChickenAI : MonoBehaviour
 {
-    public AudioClip walkingSound;
+    public AudioClip[] walkingSounds;
     public AudioClip stalkingSound;
     public AudioClip runningSound;
     public AudioClip lookaroundSound;
@@ -19,11 +19,12 @@ public class AudioComponentChickenAI : MonoBehaviour
     }
     void WalkingSound()
     {
-        audioS.PlayOneShot(walkingSound);
+        audioS.PlayOneShot(walkingSounds[Random.Range(0, walkingSounds.Length - 1)]);
     }
 
     void StalkingSound()
     {
+        //audioS.PlayOneShot(walkingSounds[Random.Range(0, walkingSounds.Length - 1)]);
         audioS.PlayOneShot(stalkingSound);
     }
 

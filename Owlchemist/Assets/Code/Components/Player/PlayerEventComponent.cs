@@ -27,6 +27,9 @@ public class PlayerEventComponent : BaseComponent
     public delegate void SisterCleansedDelegate();
     public SisterCleansedDelegate OnSisterCleansed;
 
+    public delegate void StoryEndingDelegate();
+    public StoryEndingDelegate StartEnd;
+
     private void Awake()
     {
         hasTakenFogDamage = false;
