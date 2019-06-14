@@ -36,7 +36,7 @@ public class MovementSystem : BaseSystem
 
     public override void Initialize(Transform[] objects)
     {
-        // list because I don't know size here////
+        // list because I don't know size here//
         List<Filter> tmpFilters = new List<Filter>();
         int index = 0;
         for (int i = 0; i < objects.Length; i++)
