@@ -1752,6 +1752,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3d5dc6cf0be03d54485f4e961b57414c, type: 2}
+    - target: {fileID: 6751767259495483418, guid: f1d0399e9c6bff049a2e46ee0dfbc2f1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751767259495483418, guid: f1d0399e9c6bff049a2e46ee0dfbc2f1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -85.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751767259495483418, guid: f1d0399e9c6bff049a2e46ee0dfbc2f1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.77
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d0399e9c6bff049a2e46ee0dfbc2f1, type: 3}
 --- !u!4 &348504184 stripped
@@ -4847,7 +4862,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-8556
+  m_Name: pb_Mesh-8662
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5836,6 +5851,21 @@ PrefabInstance:
     - target: {fileID: 4419743895515081121, guid: 6beea1db67e5d3447be06f886b69127d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870875459598911725, guid: 6beea1db67e5d3447be06f886b69127d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113680545126717475, guid: 6beea1db67e5d3447be06f886b69127d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721796740728928785, guid: 6beea1db67e5d3447be06f886b69127d,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7208,6 +7238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 240526718, guid: 25ca7a601f6c8264fa38e8cc8fa6d8b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5178361917441698382, guid: 25ca7a601f6c8264fa38e8cc8fa6d8b3,
         type: 3}
       propertyPath: m_Lens.FieldOfView
@@ -7222,10 +7256,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Priority
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 240526718, guid: 25ca7a601f6c8264fa38e8cc8fa6d8b3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4957162017047895481, guid: 25ca7a601f6c8264fa38e8cc8fa6d8b3,
         type: 3}
@@ -8610,7 +8640,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh259812
+  m_Name: pb_Mesh21612
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37938,6 +37968,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flasks
       objectReference: {fileID: 0}
+    - target: {fileID: 6412939338042722767, guid: 83edcb836f576a341915cf0c425c5dcf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4807482202505268555, guid: 83edcb836f576a341915cf0c425c5dcf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38023,11 +38058,6 @@ PrefabInstance:
       propertyPath: storyActivated
       value: 
       objectReference: {fileID: 443685342}
-    - target: {fileID: 6412939338042722767, guid: 83edcb836f576a341915cf0c425c5dcf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4962233545551991554, guid: 83edcb836f576a341915cf0c425c5dcf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38873,6 +38903,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5448423249341531512}
+  - component: {fileID: 9063469841338185580}
   m_Layer: 16
   m_Name: DiscoverCorpseEvent
   m_TagString: Untagged
@@ -38880,3 +38911,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9063469841338185580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063469841338185579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9884d0c2f52f17e44bacba6d179bdd55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letter: {fileID: 755510593}
+  gList: {fileID: 1243162295}

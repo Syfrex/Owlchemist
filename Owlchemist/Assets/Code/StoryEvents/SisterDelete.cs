@@ -8,9 +8,8 @@ public class SisterDelete : MonoBehaviour
     [SerializeField] GameObject sisterBody;
     [SerializeField] GameObject sisterGravestone;
     [SerializeField] PlayerEventComponent eventComponent;
-
     public CartInteraction insideCart;
-
+    bool ifSisterDead = true;
     bool decaing = false;
     float dealy = 3f;
    private void Awake()
@@ -19,11 +18,19 @@ public class SisterDelete : MonoBehaviour
     }
     public void DeleteSisterBody()
     {
-        sisterBody.gameObject.SetActive(false);
-        sisterGravestone.gameObject.SetActive(true);
-        decaing = true;
-        insideCart.interactives[insideCart.interactives.Length - 1].GetComponent<UICartCanvas>().menuButtonsList[0].menu.GetComponent<TurnInPotion>().canAppear = true;
-        insideCart.player.GetComponent<GameManagerComponent>()?.OnStopGameTick();
+
+        if (ifSisterDead)
+        {
+            insideCart.player.GetComponent<PlayerEventComponent>().StartEnd();
+        }
+        else
+        {
+            sisterBody.gameObject.SetActive(false);
+            sisterGravestone.gameObject.SetActive(true);
+            decaing = true;
+            insideCart.interactives[insideCart.interactives.Length - 1].GetComponent<UICartCanvas>().menuButtonsList[0].menu.GetComponent<TurnInPotion>().canAppear = true;
+            insideCart.player.GetComponent<GameManagerComponent>()?.OnStopGameTick();
+        }
     }
     private void Update()
     {
@@ -34,6 +41,13 @@ public class SisterDelete : MonoBehaviour
                 decaing = false;
                 insideCart.player.GetComponent<InventoryComponent>().TransferItemsFromTo(insideCart.player.GetComponent<InventoryComponent>(), insideCart.cart.GetComponent<InventoryComponent>());
                 insideCart.PlayerDeath();
+                ifSisterDead = true;
+                //Hard Coded Main Mission Proggres
+                if (insideCart.glist.GetComponent<GroceryList>().missonState < 4)
+                {
+                    Debug.Log("GotHere");
+                    insideCart.glist.GetComponent<GroceryList>().NewMainQuest(4);
+                }
             }
             else
             {

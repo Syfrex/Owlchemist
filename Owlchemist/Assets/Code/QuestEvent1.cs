@@ -16,6 +16,7 @@ public class QuestEvent1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Hard Coded Main Mission Proggres
         if (done)
         {
             if(letter.activeSelf == false)

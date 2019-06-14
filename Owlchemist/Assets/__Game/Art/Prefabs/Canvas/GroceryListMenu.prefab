@@ -567,8 +567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -132, y: -141.75}
-  m_SizeDelta: {x: 160, y: 76.1}
+  m_AnchoredPosition: {x: -191.2, y: -137.1}
+  m_SizeDelta: {x: 279.27, y: 76.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7987254100199741157
 CanvasRenderer:
@@ -611,7 +611,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Cure Sister
+  m_Text: Drop the Tears of the Sun-mother potion into the Corrupted Well and cleanse
+    the land
 --- !u!1 &3341377700261614535
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,13 +638,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3341377700261614535}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.000045924342, y: -0.008723198, z: 0.00027880588, w: 0.9999619}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4914926552544844055}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.0050000004, y: -1, z: 0.032}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -132, y: -72.50003}
@@ -682,7 +683,7 @@ MonoBehaviour:
     m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 2
     m_AlignByGeometry: 0
@@ -1941,13 +1942,13 @@ MonoBehaviour:
   noIngerdiantIcon: {fileID: 21300000, guid: c41c8914e02761f468e3efa0b63181a1, type: 3}
   mainMisionText:
   - Find your sister
-  - Find your sister's cart
+  - Get to your sister's cart
   - Craft a Potion of Purification
   - Pour the Potion of Purification on your sister's body to cleanse it
+  - Read the message from the owl in the cart
   - Craft the Tears of the Sun-mother potion
   - Drop the Tears of the Sun-mother potion into the Corrupted Well and cleanse the
     land
-  - Return to the cart and travel onwards
   missonState: 0
   fadeDelay: 3
   fadeTime: 0
