@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathScreen : MonoBehaviour
 {
@@ -18,16 +19,19 @@ public class DeathScreen : MonoBehaviour
     {
         cartInteraction.PlayerDeath();
         player.inputComponent.OnAButtonDown -= Respawn;
+        player.inputComponent.OnBButtonDown -= QuitGame;
         player.gameManagerComponent.isInsideCart = true;
         gameObject.SetActive(false);
     }
 
-    private void QuitGame()
+    public void QuitGame()
     {
-        player.inputComponent.OnBButtonDown -= QuitGame;
+       
+        SceneManager.LoadScene(0);
+        /*player.inputComponent.OnBButtonDown -= QuitGame;
+        player.inputComponent.OnAButtonDown -= Respawn;
         player.animationComponent.animator.speed = 1f;
-        player.gameManagerComponent.OnStartGameTick();
-        gameObject.SetActive(false);
+        */player.gameManagerComponent.OnStartGameTick();
     }
 
 }
