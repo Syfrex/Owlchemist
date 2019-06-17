@@ -22,6 +22,7 @@ public class CombatPotion : MonoBehaviour
     public GameObject ChildVFXQuestComplete;
     public Vector3 originalPos;
     public GameObject ChildVFXQuestMissed;
+    public GameObject wellSmoke;
 
     private void Start()
     {
@@ -86,6 +87,10 @@ public class CombatPotion : MonoBehaviour
                     ChildVFXQuestComplete.SetActive(false);
                     gameObject.SetActive(false);
 
+                    if (wellSmoke != null)
+                    {
+                        wellSmoke.SetActive(false);
+                    }
                 }
             }
             else

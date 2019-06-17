@@ -294,8 +294,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_PlayOnAwake: 1
+  m_Volume: 0.51
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -303,8 +303,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 14.046047
+  MinDistance: 0.81857866
+  MaxDistance: 13.793198
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -386,11 +386,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5886491892877068111}
     m_Modifications:
-    - target: {fileID: 92340400642035255, guid: 03cdeff253ad8bf4da66545b28603793,
-        type: 3}
-      propertyPath: m_Name
-      value: Pref_TheChicken
-      objectReference: {fileID: 0}
     - target: {fileID: 3968611087954836516, guid: 03cdeff253ad8bf4da66545b28603793,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -445,6 +440,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 92340400642035255, guid: 03cdeff253ad8bf4da66545b28603793,
+        type: 3}
+      propertyPath: m_Name
+      value: Pref_TheChicken
       objectReference: {fileID: 0}
     - target: {fileID: 2224540288216791364, guid: 03cdeff253ad8bf4da66545b28603793,
         type: 3}
