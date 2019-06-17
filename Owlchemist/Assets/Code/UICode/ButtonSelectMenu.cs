@@ -7,19 +7,11 @@ using UnityEngine.EventSystems;
 public class ButtonSelectMenu : MonoBehaviour
 {
     [SerializeField] Button selected;
-    public GameObject lastpage;
-    public PauseMenu pausesScrenManager;
-    private PlayerFilter player;
 
     private void OnEnable()
     {
-        this.player = pausesScrenManager.player;
-        if (selected)
-        {
-             EventSystem.current.SetSelectedGameObject(selected.gameObject);
-             selected.OnSelect(null);
-        }
-        player.inputComponent.OnBButtonDown += ReturnToMenu;
+        EventSystem.current.SetSelectedGameObject(selected.gameObject);
+        selected.OnSelect(null);
     }
     private void OnDisable()
     {

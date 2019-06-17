@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public Button defaultButton;
-    public GameObject PauseScreen;
-    public PlayerFilter player;
+
+    private PlayerFilter player;
 
     public void SubscribeToPause(PlayerFilter player)
     {
         this.player = player;
-        PauseScreen.GetComponent<ButtonSelectMenu>().ReDoPlayer();
+        player.inputComponent.OnBButtonDown += ReturnToGame;
     }
 
-    public void QuitGame()
+    public void ReturnToGame()
     {
-        SceneManager.LoadScene(0);
+        player.animationComponent.animator.speed = 1f;
+        player.gameManagerComponent.OnStartGameTick();
+        gameObject.SetActive(false);
     }
 }

@@ -23,6 +23,7 @@ public class CombatPotion : MonoBehaviour
     public Vector3 originalPos;
     public GameObject ChildVFXQuestMissed;
     public GameObject storyActivated;
+    public GameObject wellSmoke;
 
     private void Start()
     {
@@ -67,25 +68,22 @@ public class CombatPotion : MonoBehaviour
         }
         if (BattleType == BattlePoition.QUEST)
         {
-            /*
             isCurrentlyActivated = true;
   
              if (Vector3.Distance(questObjective.transform.position, transform.position) < 5 && questComplete == false)
              {
                 if (storyActivated.GetComponent<SisterDelete>())
                 {
-                    Debug.Log("Hangon!!");
                     player.GetComponent<PlayerEventComponent>().OnSisterCleansed();
                 }
                 if (storyActivated.GetComponent<StoryEndGame>())
                 {
-                    Debug.Log("grönaluyctan");
                     player.GetComponent<PlayerEventComponent>().StartEnd();
                 }
-                 questComplete = true;                 
+                 questComplete = true;
+                 Debug.Log("béllo");
             
              }
-             */
             if (questComplete)
             {
                 
@@ -97,6 +95,10 @@ public class CombatPotion : MonoBehaviour
                     ChildVFXQuestComplete.SetActive(false);
                     gameObject.SetActive(false);
 
+                    if (wellSmoke != null)
+                    {
+                        wellSmoke.SetActive(false);
+                    }
                 }
             }
             else
