@@ -24,7 +24,7 @@ public class CartInteraction : MonoBehaviour
     public GameObject uiHolder;
     public List <GameObject> newRewards;
     public GameObject postProcessObject;
-
+    bool everFirstEnter = true;
     //[Header("Friday Review Fix")]
     //public Text mushroomTXT;
     //public Text flowerTXT;
@@ -63,11 +63,6 @@ public class CartInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            PlayerDeath();
-        }
-
         if (cameraRef.Priority == 100)
         {
             if (target == - 1)
@@ -113,6 +108,15 @@ public class CartInteraction : MonoBehaviour
         interactives[target].GetComponent<UITarget>().Selected();
         UpdateQuests();
         PlayerTargetText();
+        //Hard Coded Main Mission Proggres
+        if (everFirstEnter)
+        {
+            if (glist.GetComponent<GroceryList>().missonState < 2)
+            {
+                glist.GetComponent<GroceryList>().NewMainQuest(2);
+            }
+            everFirstEnter = false;
+        }
 
     }
     void MoveInCart (int newTarget)

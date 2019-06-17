@@ -18,6 +18,7 @@ public class CraftPotion : MonoBehaviour
     public Image craftAnimationRef;
     public int myPotionNumb;
     List<int> tempNum = new List<int> { };
+    bool doOnce = true;
     //public GameObject insideCartRef;
     //[Header("Potion")]
     //public BaseResource resource;
@@ -93,10 +94,26 @@ public class CraftPotion : MonoBehaviour
         if (insidecartRef.GetComponent<CartInteraction>().worldRef.GetComponent<CraftingSystem>().CraftGotMaterials(myPotionNumb))
         {
             insidecartRef.GetComponent<CartInteraction>().worldRef.GetComponent<CraftingSystem>().CraftFromRecipe(myPotionNumb);
-            //craftAnimationRef.GetComponent<Animator>().Play("craftAnimation",1);
             craftAnimationRef.gameObject.SetActive(false);
             craftAnimationRef.gameObject.SetActive(true);
-            // Play craft sounds
+            if (doOnce)
+            {
+                if (myPotionNumb == 0)
+                {
+                    if (list.GetComponent<GroceryList>().missonState < 3)
+                    {
+                        list.GetComponent<GroceryList>().NewMainQuest(3);
+                    }
+                }
+                else if (myPotionNumb == 1)
+                {
+                    if (list.GetComponent<GroceryList>().missonState <6)
+                    {
+                        list.GetComponent<GroceryList>().NewMainQuest(6);
+                    }
+                }
+                doOnce = false;
+            }
         }
         else
         {

@@ -67,22 +67,25 @@ public class CombatPotion : MonoBehaviour
         }
         if (BattleType == BattlePoition.QUEST)
         {
+            /*
             isCurrentlyActivated = true;
   
              if (Vector3.Distance(questObjective.transform.position, transform.position) < 5 && questComplete == false)
              {
                 if (storyActivated.GetComponent<SisterDelete>())
                 {
+                    Debug.Log("Hangon!!");
                     player.GetComponent<PlayerEventComponent>().OnSisterCleansed();
                 }
                 if (storyActivated.GetComponent<StoryEndGame>())
                 {
+                    Debug.Log("grönaluyctan");
                     player.GetComponent<PlayerEventComponent>().StartEnd();
                 }
-                 questComplete = true;
-                 Debug.Log("béllo");
+                 questComplete = true;                 
             
              }
+             */
             if (questComplete)
             {
                 

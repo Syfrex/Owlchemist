@@ -272,6 +272,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultButton: {fileID: 8294397773690295036}
+  PauseScreen: {fileID: 5553870192084929770}
+  player:
+    go: {fileID: 0}
+    inputComponent: {fileID: 0}
+    healthComponent: {fileID: 0}
+    interactorComponent: {fileID: 0}
+    movementComponent: {fileID: 0}
+    inventoryComponent: {fileID: 0}
+    gameManagerComponent: {fileID: 0}
+    animationComponent: {fileID: 0}
+    playerStoryComponent: {fileID: 0}
+    eventComponent: {fileID: 0}
+    gatheringComponent: {fileID: 0}
+    uiComponent: {fileID: 0}
+    navMeshComponent: {fileID: 0}
+    lightComponent: {fileID: 0}
+    vfxComponent: {fileID: 0}
+    combatComponent: {fileID: 0}
+    audioComponent: {fileID: 0}
+    conditionsComponent: {fileID: 0}
+--- !u!114 &5291169310528263299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853213192982268839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf93cb7a9d6ee2c458d9721aa16a001d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selected: {fileID: 0}
+  lastpage: {fileID: 5553870192084929770}
+  pausesScrenManager: {fileID: 1764450560452787725}
 --- !u!1001 &2065319535759608720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -389,6 +424,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 552197946182615521, guid: 15960bf81dcf6c74b8b44aa80e9f1911,
+        type: 3}
+      propertyPath: lastpage
+      value: 
+      objectReference: {fileID: 4853213192982268839}
+    - target: {fileID: 552197946182615521, guid: 15960bf81dcf6c74b8b44aa80e9f1911,
+        type: 3}
+      propertyPath: pausesScrenManager
+      value: 
+      objectReference: {fileID: 1764450560452787725}
     - target: {fileID: 510905309279816710, guid: 15960bf81dcf6c74b8b44aa80e9f1911,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -565,27 +610,37 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1871815435158096757, guid: 155499ec219df7943a82d64e6b9abda0,
+        type: 3}
+      propertyPath: lastpage
+      value: 
+      objectReference: {fileID: 4853213192982268839}
+    - target: {fileID: 1871815435158096757, guid: 155499ec219df7943a82d64e6b9abda0,
+        type: 3}
+      propertyPath: pausesScrenManager
+      value: 
+      objectReference: {fileID: 1764450560452787725}
     - target: {fileID: 3067950161506211307, guid: 155499ec219df7943a82d64e6b9abda0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 5553870192084929770}
-    - target: {fileID: 7642156372028068288, guid: 155499ec219df7943a82d64e6b9abda0,
+    - target: {fileID: 4040273355164251860, guid: 155499ec219df7943a82d64e6b9abda0,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 804037400473952650}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1925143792128835514, guid: 155499ec219df7943a82d64e6b9abda0,
         type: 3}
       propertyPath: m_Name
       value: AudioSlider
       objectReference: {fileID: 0}
-    - target: {fileID: 7247198843113932572, guid: 155499ec219df7943a82d64e6b9abda0,
+    - target: {fileID: 7642156372028068288, guid: 155499ec219df7943a82d64e6b9abda0,
         type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040273355164251860, guid: 155499ec219df7943a82d64e6b9abda0,
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 804037400473952650}
+    - target: {fileID: 7247198843113932572, guid: 155499ec219df7943a82d64e6b9abda0,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -621,6 +676,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2291238287734371914, guid: fce07c0dff594be439fac1768be42f3c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300450148253385838, guid: fce07c0dff594be439fac1768be42f3c,
         type: 3}
@@ -737,17 +797,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 117.2
       objectReference: {fileID: 0}
-    - target: {fileID: 481611271815846876, guid: fce07c0dff594be439fac1768be42f3c,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c41c8914e02761f468e3efa0b63181a1,
-        type: 3}
-    - target: {fileID: 2433294284765390940, guid: fce07c0dff594be439fac1768be42f3c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1764450560452787725}
     - target: {fileID: 6618680052615343259, guid: fce07c0dff594be439fac1768be42f3c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -763,11 +812,27 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.00001955
       objectReference: {fileID: 0}
+    - target: {fileID: 1669164684565110991, guid: fce07c0dff594be439fac1768be42f3c,
+        type: 3}
+      propertyPath: pausesScrenManager
+      value: 
+      objectReference: {fileID: 1764450560452787725}
+    - target: {fileID: 2433294284765390940, guid: fce07c0dff594be439fac1768be42f3c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1764450560452787725}
     - target: {fileID: 2125028744288324233, guid: fce07c0dff594be439fac1768be42f3c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4853213192982268839}
+    - target: {fileID: 481611271815846876, guid: fce07c0dff594be439fac1768be42f3c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c41c8914e02761f468e3efa0b63181a1,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fce07c0dff594be439fac1768be42f3c, type: 3}
 --- !u!1 &5553870192084929770 stripped
