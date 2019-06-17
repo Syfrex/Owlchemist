@@ -14,6 +14,15 @@ public class DisplayTutorialPromptEvent : BaseStoryEvent
         cgf.Display(false);
     }
 
+    public override void TriggerStoryEvent(PlayerFilter playerfilter, GameObject obj, CanvasGroupFader auxFader)
+    {
+        CanvasGroupFader fader = obj.GetComponent<CanvasGroupFader>();
+        cgf = fader;
+        cgf.Display(false);
+
+        base.TriggerStoryEvent(playerfilter, obj, auxFader);
+    }
+
     public override void TriggerStoryBegin(PlayerFilter playerFilter, GameObject obj)
     {
         
@@ -27,5 +36,12 @@ public class DisplayTutorialPromptEvent : BaseStoryEvent
     public override void TriggerStoryEnd(PlayerFilter playerFilter, GameObject obj)
     {
         cgf.Hide(false);
+    }
+
+    public override void TriggerStoryEnd(PlayerFilter playerFilter, GameObject obj, CanvasGroupFader auxFader)
+    {
+        cgf.Hide(false);
+
+        base.TriggerStoryEnd(playerFilter, obj, auxFader);
     }
 }

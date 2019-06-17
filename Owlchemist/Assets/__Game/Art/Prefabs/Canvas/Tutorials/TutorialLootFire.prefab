@@ -208,7 +208,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: Please loot fire to refill torcheronsker
+  m_Text: Interacting with certain items will refill your flame
 --- !u!1 &6786540811571679121
 GameObject:
   m_ObjectHideFlags: 0

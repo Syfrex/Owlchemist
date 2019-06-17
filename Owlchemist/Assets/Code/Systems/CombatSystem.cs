@@ -98,8 +98,11 @@ public class CombatSystem : BaseSystem
             debugProjectiles = combComp.projectiles;*/
         }
 
-        LightComponent lc = player.lightComponent;
         HealthComponent hc = player.healthComponent;
+
+        if (hc.isTutorialNoTakeDamage) { return; }
+
+        LightComponent lc = player.lightComponent;
 
 /*
         if (Input.GetKeyDown(KeyCode.H))
@@ -133,10 +136,19 @@ public class CombatSystem : BaseSystem
             {
                 if (hc.currentGranularHealth > 0)
                 {
-                    float healthPercentage = hc.currentGranularHealth / hc.maxGranularHealth;
+                    // pulse damage
+                    hc.currentFogDamageTimer += deltaTime;
+                    if (hc.currentFogDamageTimer > hc.fogDamageInterval)
+                    {
+                        hc.currentFogDamageTimer = 0f;
+                        float healthPercentage = hc.currentGranularHealth / hc.maxGranularHealth;
 
-                    player.uiComponent.healthIndicator.SetImageFillAmount(hc.currentHealth, healthPercentage);
-                    player.healthComponent.TakeGranularDamage(hc.darknessGranularHealthDrain * deltaTime);
+                        player.uiComponent.healthIndicator.SetImageFillAmount(hc.currentHealth, healthPercentage);
+                        hc.TakeGranularDamageOverTime(hc.darknessGranularHealthDrain, 2.5f, false);
+                        //player.healthComponent.TakeGranularDamage(hc.darknessGranularHealthDrain);
+                        player.inputComponent.PulseVibrate(.3f);
+                        player.uiComponent.healthIndicator.TriggerHeartDecay(hc.currentHealth);
+                    }
                 }
             }
             else

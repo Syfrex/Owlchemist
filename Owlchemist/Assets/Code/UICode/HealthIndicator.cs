@@ -49,13 +49,11 @@ public class HealthIndicator : MonoBehaviour
 
     public void TriggerHeartPulse(int index)
     {
-        Debug.Log("heart pulse: " + index);
         animator.SetTrigger(string.Format("Pulse{0}", index));
     }
 
     public void TriggerHeartDecay(int index)
     {
-        Debug.Log("heart decay: " + index);
         animator.SetTrigger(string.Format("Decay{0}", index));
     }
 

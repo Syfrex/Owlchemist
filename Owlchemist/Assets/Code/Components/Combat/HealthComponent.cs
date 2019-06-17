@@ -7,6 +7,8 @@ public class HealthComponent : BaseComponent
     public int currentHealth { get; set; } //private set
     public float currentGranularHealth;
 
+    public bool isTutorialNoTakeDamage { get; set; }
+
     public float maxGranularHealth = 100f;
     public float granularHealthRestorationAmount = 10f;
     public float darknessGranularHealthDrain = 10f;
@@ -18,6 +20,9 @@ public class HealthComponent : BaseComponent
     public float alterTickAmount { get; set; }
 
     public bool isTakingDamage { get; set; }
+
+    public float fogDamageInterval = 1f;
+    public float currentFogDamageTimer { get; set; }
 
     public delegate void PlayerTakeDamageDelegate();
     public PlayerTakeDamageDelegate OnPlayerTakeDamage;
@@ -44,6 +49,8 @@ public class HealthComponent : BaseComponent
         isHealing = false;
         healthAlterDuration = 0f;
         currentAlterTime = 0f;
+        isTutorialNoTakeDamage = true;
+        currentFogDamageTimer = 0f;
 
         OnPlayerRessurected += InternalRestoreFullHealth;
     }
@@ -146,7 +153,6 @@ public class HealthComponent : BaseComponent
         else
         {
             isHealing = true;
-            Debug.Log("isHealing: " + isHealing);
         }
 
         healthAlterAmount = amount;

@@ -6,15 +6,14 @@ using UnityEngine.UI;
 [RequireComponent(typeof(CanvasGroup))]
 public class CanvasGroupFader : MonoBehaviour
 {
-    public CanvasGroup cg;
     public float fadeInTime = 1f;
     public float fadeOutTime = 1f;
-
-    private float alpha = 0f;
     public bool visible;
 
-    public FadeState currentState;
+    private float alpha = 0f;
+    private CanvasGroup cg;
 
+    public FadeState currentState = FadeState.None;
     public enum FadeState
     {
         None,
@@ -26,8 +25,7 @@ public class CanvasGroupFader : MonoBehaviour
     {
         cg = GetComponent<CanvasGroup>();
         cg.alpha = alpha;
-        gameObject.SetActive(false);
-        currentState = FadeState.None;
+        //gameObject.SetActive(false);
     }
 
     private void Update()

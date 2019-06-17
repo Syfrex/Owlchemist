@@ -43,12 +43,18 @@ public class StoryBeatComponent : BaseComponent
     [System.Serializable]
     public class StoryBeatCollection
     {
+        [Header("Base Settings")]
         public GameObject storyBeatObject;
-        public float beginCheckDelay;
-        public bool pausePlay;
         public BaseStoryProgressionCondition enterBeatCondition;
         public BaseStoryProgressionCondition exitBeatCondition;
         public BaseStoryEvent storyEvent;
+        [Header("Extras")]
+        public float beginCheckDelay;
+        public bool pausePlay;
+        [Header("Auxiliary CanvasGroupFader")]
+        public CanvasGroupFader auxFader;
+        public bool auxFadeOnBegin;
+        [Header("Stats")]
         public bool isStoryBeatDone;
         public OwlStoryBeatProgression progression;
     }

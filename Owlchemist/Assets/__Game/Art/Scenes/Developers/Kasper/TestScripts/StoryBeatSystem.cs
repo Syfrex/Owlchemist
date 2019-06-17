@@ -100,7 +100,15 @@ public class StoryBeatSystem : BaseSystem
                 if (sc.enterBeatCondition == null) { return; }
                 if (sc.enterBeatCondition.ConditionMet(player, storyBeats[0]))
                 {
-                    sc.storyEvent.TriggerStoryEvent(player, sc.storyBeatObject);
+                    if (sc.auxFader && sc.auxFadeOnBegin)
+                    {
+                        sc.storyEvent.TriggerStoryEvent(player, sc.storyBeatObject, sc.auxFader);
+                    }
+                    else
+                    {
+                        sc.storyEvent.TriggerStoryEvent(player, sc.storyBeatObject);
+                    }
+
                     player.playerStoryComponent.currentStoryCollection = sc;
                     sc.progression++;
                     if (sc.pausePlay)
@@ -113,8 +121,15 @@ public class StoryBeatSystem : BaseSystem
                 if (sc.exitBeatCondition == null) { return; }
                 if (sc.exitBeatCondition.ConditionMet(player, storyBeats[0]))
                 {
+                    if (sc.auxFader && !sc.auxFadeOnBegin)
+                    {
+                        sc.storyEvent.TriggerStoryEnd(player, sc.storyBeatObject, sc.auxFader);
+                    }
+                    else
+                    {
+                        sc.storyEvent.TriggerStoryEnd(player, sc.storyBeatObject);
+                    }
                     sc.isStoryBeatDone = true;
-                    sc.storyEvent.TriggerStoryEnd(player, sc.storyBeatObject);
                     sc.progression++;
                     if (sc.pausePlay)
                     {

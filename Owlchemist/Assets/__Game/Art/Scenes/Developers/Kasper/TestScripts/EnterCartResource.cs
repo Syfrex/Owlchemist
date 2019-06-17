@@ -23,6 +23,7 @@ public class EnterCartResource : BaseResource
             player.inventoryComponent.TransferItemsFromTo(player.inventoryComponent, cart.GetComponent<InventoryComponent>(), true);
         }
         player.gameManagerComponent.isInsideCart = true;
+        player.healthComponent.isTutorialNoTakeDamage = false;
         player.gameManagerComponent.cartInteraction.EnterCart();
         return true;
     }
