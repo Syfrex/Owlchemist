@@ -1,26 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.Playables;
 
 public class StoryEndGame : MonoBehaviour
 {
 
-    private PlayableDirector timeline;
-    private GameObject playerRef;
+    public PlayableDirector timeline;
+    public CartInteraction insidecartRef;
 
-    //[SerializeField] PlayerEventComponent eventComponent;
+    [SerializeField] PlayerEventComponent eventComponent;
     // Start is called before the first frame update
     void Start()
     {
-        playerRef = GameObject.FindGameObjectWithTag("Player");
         timeline = GetComponent<PlayableDirector>();
-        playerRef.GetComponent<PlayerEventComponent>().StartEnd += EndingCutScene;
     }
 
     private void Awake()
     {
+        eventComponent.StartEnd += EndingCutScene;
     }
 
 
@@ -31,7 +29,7 @@ public class StoryEndGame : MonoBehaviour
     }
     void EndingCutScene ()
     {
-        playerRef.GetComponent<NavMeshAgent>().enabled = false;
+        insidecartRef.player.GetComponent<GameManagerComponent>()?.OnStopGameTick();
         timeline.Play();
     }
 }
