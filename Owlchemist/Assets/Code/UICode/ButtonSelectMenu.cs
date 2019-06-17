@@ -29,7 +29,6 @@ public class ButtonSelectMenu : MonoBehaviour
     {
         if (!lastpage)
         {
-            Debug.Log("Melvin, Melvin");
             player.animationComponent.animator.speed = 1f;
             player.gameManagerComponent.OnStartGameTick();
             pausesScrenManager.gameObject.SetActive(false);

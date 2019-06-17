@@ -5,18 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class UILoseReturnToMenu : MonoBehaviour
 {
-    private PlayerFilter player;
-    public void SubscribeToButtonEvents(PlayerFilter player)
-    {
-        this.player = player;
-        player.movementComponent.alive = false;
-        player.inputComponent.OnAButtonDown += QuitGame;
-    }
+    public CartInteraction cartRef;
+
     void QuitGame()
     {
-        player.inputComponent.OnAButtonDown -= QuitGame;
-        player.animationComponent.animator.speed = 1f;
-        player.gameManagerComponent.OnStartGameTick();
+        cartRef.player.GetComponent<InputComponent>().OnAButtonDown -= QuitGame;
+        cartRef.player.GetComponent<AnimationComponent>().animator.speed = 1f;
+        cartRef.player.GetComponent<GameManagerComponent>().OnStartGameTick();
         SceneManager.LoadScene(0);
+    }
+    private void Awake()
+    {
+        cartRef.player.GetComponent<MovementComponent>().alive = false;
+        cartRef.player.GetComponent<InputComponent>().OnAButtonDown += QuitGame;
     }
 }

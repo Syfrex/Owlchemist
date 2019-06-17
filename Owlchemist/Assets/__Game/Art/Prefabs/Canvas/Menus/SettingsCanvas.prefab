@@ -1396,6 +1396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 7797310518499078217}
+  myImage: {fileID: 1740687754317400892}
 --- !u!1 &7421563841860458457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,11 +1911,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4062958894746654596}
     m_Modifications:
-    - target: {fileID: 3714046841631250273, guid: 5b1c4e460ebc40f41a36542b982475c4,
-        type: 3}
-      propertyPath: m_Name
-      value: ResolutionCanvas
-      objectReference: {fileID: 0}
     - target: {fileID: 5297976099409773151, guid: 5b1c4e460ebc40f41a36542b982475c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2019,6 +2015,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714046841631250273, guid: 5b1c4e460ebc40f41a36542b982475c4,
+        type: 3}
+      propertyPath: m_Name
+      value: ResolutionCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 2429492206152929475, guid: 5b1c4e460ebc40f41a36542b982475c4,
         type: 3}
