@@ -39,7 +39,7 @@ public class PlayerEventComponent : BaseComponent
     {
         if (Input.GetKeyDown(KeyCode.U))
         {
-            StartEnd?.Invoke();
+            OnSisterCleansed?.Invoke();
         }
     }
 }

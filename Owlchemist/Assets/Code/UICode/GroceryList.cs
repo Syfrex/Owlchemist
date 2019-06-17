@@ -17,6 +17,7 @@ public class GroceryList : MonoBehaviour
     public int missonState = 0;
     public float fadeDelay = 1.2f;
     public float fadeTime = 0;
+
     public ingredientAmount[] allIngredienses;
     public Sprite[] allIngrediensesImages;
     public List<ingredientAmount> allIngrediensessOnList = new List<ingredientAmount>();
@@ -60,7 +61,6 @@ public class GroceryList : MonoBehaviour
         {
             missonState = newQuestNumber;
         }
-
         mainMissionTxT.text = mainMisionText[missonState];
     }
     public void UpdateList()
