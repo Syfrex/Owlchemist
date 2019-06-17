@@ -13,4 +13,33 @@ public class ButtonSelectMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(selected.gameObject);
         selected.OnSelect(null);
     }
+    private void OnDisable()
+    {
+        player.inputComponent.OnBButtonDown -= ReturnToMenu;
+    }
+    public void ReturnToMenu()
+    {
+        if (!lastpage)
+        {
+            player.animationComponent.animator.speed = 1f;
+            player.gameManagerComponent.OnStartGameTick();
+            pausesScrenManager.gameObject.SetActive(false);
+            /*Debug.Log("Hercules");
+            lastpage.SetActive(true);
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Melvin, Melvin");
+            player.animationComponent.animator.speed = 1f;
+            player.gameManagerComponent.OnStartGameTick();
+            pausesScrenManager.gameObject.SetActive(false);*/
+        }
+    }
+    public void ReDoPlayer()
+    {
+        this.player = pausesScrenManager.player;
+        player.inputComponent.OnBButtonDown += ReturnToMenu;
+    }
+
 }

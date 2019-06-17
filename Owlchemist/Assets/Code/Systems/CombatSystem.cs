@@ -69,11 +69,11 @@ public class CombatSystem : BaseSystem
 
 
             // ----- logic -----
-
+            /*
             if (inputComp.xButtonDown || Input.GetKeyDown(KeyCode.X))
             {
                 PerformTorchSwing(combComp);
-            }
+            }*/
             /*if (combComp.projectiles != null)
             {
                 MoveProjectiles(combComp.projectiles, deltaTime);
