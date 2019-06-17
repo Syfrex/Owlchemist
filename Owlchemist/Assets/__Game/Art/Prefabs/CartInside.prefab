@@ -4787,6 +4787,11 @@ PrefabInstance:
       propertyPath: potion
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1879483146247696703, guid: 6f81bd47df4b3da47a0bb60c7ff2fd97,
+        type: 3}
+      propertyPath: justApperd
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1284178663034048981, guid: 6f81bd47df4b3da47a0bb60c7ff2fd97,
         type: 3}
       propertyPath: insideCartRef
@@ -12063,7 +12068,7 @@ PrefabInstance:
     - target: {fileID: 7478710487675098146, guid: 161f7983799136742a5d7e75d0a7a9c4,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 817865250516567695, guid: 161f7983799136742a5d7e75d0a7a9c4,
         type: 3}
