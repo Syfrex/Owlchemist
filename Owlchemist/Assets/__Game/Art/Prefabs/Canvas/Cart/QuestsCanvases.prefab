@@ -1765,16 +1765,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8371756085584846492}
     m_Modifications:
-    - target: {fileID: 3570517617928886918, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
-        type: 3}
-      propertyPath: m_Name
-      value: Letter_02_SecondQuest
-      objectReference: {fileID: 0}
-    - target: {fileID: 3570517617928886918, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4958697507507730612, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1888,12 +1878,22 @@ PrefabInstance:
     - target: {fileID: 2461300645966241469, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570517617928886918, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
+        type: 3}
+      propertyPath: m_Name
+      value: Letter_02_SecondQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570517617928886918, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 819149230071980529, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1902223642281621743, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
         type: 3}
@@ -1909,6 +1909,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901395594944095036, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 117
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901395594944095036, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 214
       objectReference: {fileID: 0}
     - target: {fileID: 5264482950126538895, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
         type: 3}
@@ -1933,11 +1943,10 @@ PrefabInstance:
     - target: {fileID: 1130260306678912753, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
         type: 3}
       propertyPath: m_Text
-      value: "That\x19s why I\x19m here; it\x19s our last chance at cleansing the
-        fog. If this works, we have a way of saving everyone. Do this, for me, and
-        for everyone else.\r\n\r\nYours always,\r\nNyctea\n\r\nPS! I\x19m sorry I
-        didn\x19t say goodbye. But now that you know why I left, I hope you understand.
-        I believe in you. I love you, dear sister.\r\n"
+      value: "That\x19s why I\x19 was here; it\x19's our last chance at cleansing
+        the fog. Do this, for me, and for everyone else.\r\n\r\nYours always,\r\nNyctea\n\r\nPS!
+        I\x19m sorry I didn\x19t say goodbye. But now that you know why I left, I
+        hope you understand. I believe in you. I love you, dear sister.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1130260306678912753, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
         type: 3}
@@ -1952,13 +1961,12 @@ PrefabInstance:
     - target: {fileID: 5925852811720642226, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
         type: 3}
       propertyPath: m_Text
-      value: "You have to fulfill my quest now. I know you wanted no part of this,
-        but this is crucial for saving everyone. \r\n\r\nI\u2019ve found the Corrupted
-        Well, the source of corruption in this area. \n\nIt is located east of here,
-        spewing out fog like a chimney. It is now up to you to craft the Tears of
-        the Sun-mother.\r\n\r\nThe recipe is in my book. When you\u2019ve crafted
-        the potion, you must throw the potion into the Well. According to the recipe,
-        it will cleanse the entire area. \r"
+      value: "You have to fulfill my quest now. I\x19 found the <b>Corrupted Well</b>,
+        the source of corruption in this area. \n\nIt is located east, spewing fog
+        \nlike a chimney. It is now up \nto you to craft the <b>*Tears of \nthe Sun-mother.\r*</b>\n\r\nThe
+        recipe is in my book. When you\x19've crafted the potion, you must <b>throw
+        the potion into the Corrupted Well</b>. According to the recipe, it will cleanse
+        the entire area. \r"
       objectReference: {fileID: 0}
     - target: {fileID: 5925852811720642226, guid: 0908ec5c03d9fd8489e60b0a0a96ca31,
         type: 3}
@@ -1996,16 +2004,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8371756085584846492}
     m_Modifications:
-    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_Name
-      value: Letter_02_SideQuest
-      objectReference: {fileID: 0}
-    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1665444051694547325, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2116,27 +2114,32 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3625256205456431313, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622169027653039593, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 8379017011690658035, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_Name
+      value: Letter_02_SideQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467847969721861954, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2189826352517724758, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1467847969721861954, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+    - target: {fileID: 389110489480274532, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2145,6 +2148,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625256205456431313, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2622169027653039593, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 139847066553501563, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
@@ -2191,16 +2204,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8371756085584846492}
     m_Modifications:
-    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_Name
-      value: Letter_03_SideQuest
-      objectReference: {fileID: 0}
-    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1665444051694547325, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2311,27 +2314,32 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3625256205456431313, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622169027653039593, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 8379017011690658035, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_Name
+      value: Letter_03_SideQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467847969721861954, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2189826352517724758, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1467847969721861954, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+    - target: {fileID: 389110489480274532, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2340,6 +2348,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625256205456431313, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2622169027653039593, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 139847066553501563, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
@@ -2388,16 +2406,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8371756085584846492}
     m_Modifications:
-    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_Name
-      value: Letter_01_SideQuest
-      objectReference: {fileID: 0}
-    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1665444051694547325, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2508,27 +2516,32 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3625256205456431313, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622169027653039593, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 8379017011690658035, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_Name
+      value: Letter_01_SideQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467847969721861954, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2189826352517724758, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1467847969721861954, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+    - target: {fileID: 389110489480274532, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2537,6 +2550,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625256205456431313, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2622169027653039593, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 139847066553501563, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
@@ -2567,16 +2590,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8371756085584846492}
     m_Modifications:
-    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_Name
-      value: Letter_01_FirstQuest
-      objectReference: {fileID: 0}
-    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1665444051694547325, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2680,6 +2693,16 @@ PrefabInstance:
     - target: {fileID: 1665444051694547325, guid: d2f4bc78fcf48e446ade5bed6b05499c,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_Name
+      value: Letter_01_FirstQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079952518670340943, guid: d2f4bc78fcf48e446ade5bed6b05499c,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5249490304741825109, guid: d2f4bc78fcf48e446ade5bed6b05499c,
