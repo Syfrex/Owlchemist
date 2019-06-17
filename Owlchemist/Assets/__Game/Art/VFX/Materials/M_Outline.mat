@@ -92,7 +92,7 @@ Material:
     - _DstBlend: 0
     - _EmissiveTexStrength: 1
     - _FresnelPower: 10
-    - _FresnelScale: 0
+    - _FresnelScale: 2
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
