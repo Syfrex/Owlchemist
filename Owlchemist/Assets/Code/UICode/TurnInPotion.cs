@@ -19,7 +19,7 @@ public class TurnInPotion : MonoBehaviour
     public int maxDays;
     public bool completed;//Whant Idecation of Complete (visual and audio)
     public bool canAppear = true;
-    public bool justApperd = true;
+    bool justApperd = true;
     public Text pageTxT;
     public Text pageAmountTxT;
     public Text DaysLeftTxT;
