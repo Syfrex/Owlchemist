@@ -6,6 +6,7 @@ using System;
 
 public class UICartCanvas : UITarget
 {
+    public GameObject insideCartRef;
     public List<MenuButtonCombination> menuButtonsList;
     public List<MenuButtonCombination> menuButtonsListRefs;
     float lastiput;
@@ -17,7 +18,7 @@ public class UICartCanvas : UITarget
     //public MenuButtonCombination[] menuButtons = new MenuButtonCombination[] { };
     //public MenuButtonCombination[] menuButtonsRefs;
     public int arrayTarget = 0;
-
+    bool doOnce = true;
     //float time = 0;
     // Start is called before the first frame update
     void Start()
@@ -74,6 +75,28 @@ public class UICartCanvas : UITarget
                 menuButtonsListRefs[arrayTarget].menu.gameObject.SetActive(false);
             }       
             arrayTarget = 0;
+            //Hard Coded Main Mission Proggres
+            if (menuButtonsListRefs.Count == 2)
+            {
+                if (doOnce)
+                {
+                    if (menuButtonsListRefs[0].menu.GetComponent<TurnInPotion>())
+                    {           
+                        if (insideCartRef.GetComponent<CartInteraction>().glist.GetComponent<GroceryList>())
+                        {
+                            if (insideCartRef.GetComponent<CartInteraction>().glist.GetComponent<GroceryList>().missonState < 5)
+                            {
+                                insideCartRef.GetComponent<CartInteraction>().glist.GetComponent<GroceryList>().NewMainQuest(5);
+                            }
+                            doOnce = false;
+                        }
+                        else
+                        {
+                            Debug.Log("What the actual!!");
+                        }
+                    }
+                }
+            }
         }
     }
     public void MoveScreen(int way)

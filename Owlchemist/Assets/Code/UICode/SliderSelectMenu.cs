@@ -7,10 +7,13 @@ using UnityEngine.EventSystems;
 public class SliderSelectMenu : MonoBehaviour
 {
     [SerializeField] Slider selected;
+    public Image myImage;
 
     private void OnEnable()
     {
-        EventSystem.current.SetSelectedGameObject(selected.gameObject);
+        myImage.gameObject.SetActive(true);
         selected.OnSelect(null);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(selected.gameObject);
     }
 }
