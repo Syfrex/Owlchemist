@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a5ecdc2de8808419825ed6b1f37bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSound: {fileID: 8300000, guid: 3c90c9479382bd24fa5417021f1f2ff9, type: 3}
+  walkingSounds:
+  - {fileID: 8300000, guid: 8c5353360d6ec31459fb4da0bef44c9e, type: 3}
+  - {fileID: 8300000, guid: 185b50e5ab5b8eb49ad7305ce9fc1f6c, type: 3}
+  - {fileID: 8300000, guid: 161c9efd35034a04a9dc37aaa5e61f2d, type: 3}
+  - {fileID: 8300000, guid: 1a2356ae07b09b447afe2edf6af8a903, type: 3}
+  - {fileID: 8300000, guid: a9dea0ed595d75044821151c96ef03d5, type: 3}
+  - {fileID: 8300000, guid: 35c424ca301522b45a241e584f364f61, type: 3}
+  - {fileID: 8300000, guid: 271cafe69eb6d634a9c5d04cc82df6f1, type: 3}
+  - {fileID: 8300000, guid: 56ee199dacd96fb4cac1872069e35a30, type: 3}
+  - {fileID: 8300000, guid: 9f83727fc6d82a0499223b344904d167, type: 3}
+  - {fileID: 8300000, guid: a79a3d41081b71f4fb8834fadbfe916a, type: 3}
+  - {fileID: 8300000, guid: 4d0f4004a2bb3544185948209204efb1, type: 3}
   stalkingSound: {fileID: 8300000, guid: a95c3a992031c0f48868463c93ea4e11, type: 3}
   runningSound: {fileID: 8300000, guid: 67b10de84e34aa54a9e3b1368494f4af, type: 3}
   lookaroundSound: {fileID: 8300000, guid: 3b05060ac9dee664882cc44a47ba0689, type: 3}
@@ -294,8 +305,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.51
+  m_PlayOnAwake: 0
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -303,8 +314,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.81857866
-  MaxDistance: 13.793198
+  MinDistance: 1
+  MaxDistance: 50
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0

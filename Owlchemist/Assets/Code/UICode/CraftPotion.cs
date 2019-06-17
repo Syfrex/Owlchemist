@@ -53,7 +53,6 @@ public class CraftPotion : MonoBehaviour
                 yIndicatorOn.gameObject.SetActive(true);
                 yIndicatorOff.gameObject.SetActive(false);
             }
-        Debug.Log(onList);
         }
         if (craftAnimationRef.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !craftAnimationRef.GetComponent<Animator>().IsInTransition(0))
         {

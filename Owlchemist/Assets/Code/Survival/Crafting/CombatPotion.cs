@@ -22,7 +22,7 @@ public class CombatPotion : MonoBehaviour
     public GameObject ChildVFXQuestComplete;
     public Vector3 originalPos;
     public GameObject ChildVFXQuestMissed;
-    public GameObject wellSmoke;
+    public GameObject storyActivated;
 
     private void Start()
     {
@@ -69,13 +69,20 @@ public class CombatPotion : MonoBehaviour
         {
             isCurrentlyActivated = true;
   
-//             if (Vector3.Distance(questObjective.transform.position, transform.position) < 5 && questComplete == false)
-//             {
-//                 questComplete = true;
-//                 Debug.Log("béllo");
-//                 player.GetComponent<PlayerEventComponent>().OnSisterCleansed();
-// 
-//             }
+             if (Vector3.Distance(questObjective.transform.position, transform.position) < 5 && questComplete == false)
+             {
+                if (storyActivated.GetComponent<SisterDelete>())
+                {
+                    player.GetComponent<PlayerEventComponent>().OnSisterCleansed();
+                }
+                if (storyActivated.GetComponent<StoryEndGame>())
+                {
+                    player.GetComponent<PlayerEventComponent>().StartEnd();
+                }
+                 questComplete = true;
+                 Debug.Log("béllo");
+            
+             }
             if (questComplete)
             {
                 

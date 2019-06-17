@@ -17,7 +17,7 @@ public class UICartSleep : UITarget
     bool fadeIn;
     public float fadeTime;
     public float fadeTimeGoal = 3f;
-    
+    public Canvas loseScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,31 +33,38 @@ public class UICartSleep : UITarget
             {               
                 if (tempColor.a == 1)
                 {
-                    dayTXT.gameObject.SetActive(true);
-                    daysLeftTXT.gameObject.SetActive(true);
-                    fadeTime += Time.deltaTime;
-                    if(fadeTime >= fadeTimeGoal)
+                    if(finalDay - insideCartRef.GetComponent<CartInteraction>().dayCount < 0)
                     {
-                        fadeIn = false;
-                        dayTXT.gameObject.SetActive(false);
-                        daysLeftTXT.gameObject.SetActive(false);
-                        questStation.GetComponent<UICartCanvas>().NewPage();
-                        insideCartRef.GetComponent<CartInteraction>().NewDayReset();
+                        loseScreen.gameObject.SetActive(true);
+                    }
+                    else
+                    {                    
+                        dayTXT.gameObject.SetActive(true);
+                        daysLeftTXT.gameObject.SetActive(true);
+                        fadeTime += Time.deltaTime;
+                        if(fadeTime >= fadeTimeGoal)
+                        {
+                            fadeIn = false;
+                            dayTXT.gameObject.SetActive(false);
+                            daysLeftTXT.gameObject.SetActive(false);
+                            questStation.GetComponent<UICartCanvas>().NewPage();
+                            insideCartRef.GetComponent<CartInteraction>().NewDayReset();
 
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<LightComponent>().currentCharges = insideCartRef.GetComponent<CartInteraction>().player.GetComponent<LightComponent>().maxCharges;
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<LightComponent>().Reset();
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<LightComponent>().currentCharges = insideCartRef.GetComponent<CartInteraction>().player.GetComponent<LightComponent>().maxCharges;
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<LightComponent>().Reset();
 
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<UIComponent>().torchIndicator.SetImageFillAmount(1, 1f);
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<UIComponent>().torchIndicator.SetImageFillAmount(2, 1f);
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<UIComponent>().torchIndicator.SetImageFillAmount(3, 1f);
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<UIComponent>().torchIndicator.SetImageFillAmount(1, 1f);
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<UIComponent>().torchIndicator.SetImageFillAmount(2, 1f);
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<UIComponent>().torchIndicator.SetImageFillAmount(3, 1f);
 
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<MovementComponent>().agent.Warp(insideCartRef.GetComponent<CartInteraction>().cartExitPoint.transform.position);
-                        insideCartRef.GetComponent<CartInteraction>().player.transform.position = insideCartRef.GetComponent<CartInteraction>().cartExitPoint.transform.position;
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<HealthComponent>().RestoreGranularDamageOverTime(300, 0.4f, true);
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<HealthComponent>().OnPlayerRessurected();
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<UIComponent>().healthIndicator.Reset();
-                        insideCartRef.GetComponent<CartInteraction>().player.GetComponent<MovementComponent>().alive = true;
-                        //insideCartRef.GetComponent<CartInteraction>().player.GetComponent<HealthComponent>().RestoreGranularDamageOverTime(300f, 1f, true);
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<MovementComponent>().agent.Warp(insideCartRef.GetComponent<CartInteraction>().cartExitPoint.transform.position);
+                            insideCartRef.GetComponent<CartInteraction>().player.transform.position = insideCartRef.GetComponent<CartInteraction>().cartExitPoint.transform.position;
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<HealthComponent>().RestoreGranularDamageOverTime(300, 0.4f, true);
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<HealthComponent>().OnPlayerRessurected();
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<UIComponent>().healthIndicator.Reset();
+                            insideCartRef.GetComponent<CartInteraction>().player.GetComponent<MovementComponent>().alive = true;
+                            //insideCartRef.GetComponent<CartInteraction>().player.GetComponent<HealthComponent>().RestoreGranularDamageOverTime(300f, 1f, true);
+                        }
                     }
                 }
                 else
