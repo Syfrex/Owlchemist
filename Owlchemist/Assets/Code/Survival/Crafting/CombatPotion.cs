@@ -23,6 +23,7 @@ public class CombatPotion : MonoBehaviour
     public Vector3 originalPos;
     public GameObject ChildVFXQuestMissed;
     public GameObject storyActivated;
+    public GameObject wellSmoke;
 
     private void Start()
     {
